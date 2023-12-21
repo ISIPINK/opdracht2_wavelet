@@ -71,8 +71,7 @@ $$
 &\le \text{eindig} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}'(c(a))|^{2} |a|^{2}  }{|a|} da\\
 &\le \text{eindig} +2 \pi \int_{-1}^{1} |\widehat{\psi}'(c(a))|^{2} |a| da\\
 &\le \text{eindig} + \text{eindig} \\
-&< \infty
-.
+&< \infty.
 \end{aligned}
 $$
 
