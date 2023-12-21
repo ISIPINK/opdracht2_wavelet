@@ -79,4 +79,21 @@ $$
 
 # Voorbeeld 9.2
 
+(b) en (c) volgen bijna direct uit de definitie, bij (c) is ONB triviaal. <br>
+De inclusies volgt uit de schalingsvergelijking (Stelling 9.4), $h_{0}=h_{1} = \frac{1}{\sqrt{2}}$. <br>
+Volledigheid en separatie kunnen bewezen worden zoals in (Stelling 9.8) ze volgen er ook uit: <br>
+
+$|\phi(t)| \le \frac{2}{1 + t^{2}} $, $|\int \phi(t)dt | = 1 $.
+
 # Voorbeeld 9.15
+
+$$
+\begin{aligned}
+& \int_{0}^{0.5} e^{itz} dt - \int_{0.5}^{1} e^{itz} dt   \\
+&=\frac{1}{iz} \left( 2 e^{\frac{iz}{2}} - 1 - e^{iz} \right) \\
+&=\frac{e^{\frac{iz}{2}}}{iz} \left( 2  - e^{\frac{-iz}{2}} - e^{\frac{iz}{2}} \right) \\
+&=\frac{e^{\frac{iz}{2}}}{iz} \left( 2  - 2 \cos\left( \frac{z}{2}\right) \right) \\
+&=\frac{4 e^{\frac{iz}{2}}}{iz} \sin^{2}\left(\frac{z}{4}\right)
+.
+\end{aligned}
+$$
