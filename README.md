@@ -33,7 +33,7 @@ $$
 \end{aligned}
 $$
 
-Hierdoor is $\widehat{\psi}$ continu (Lemma 2.2) en ook $|\widehat{\psi}|^{2}$. Stel dat $|\widehat{\psi}(0)|^{2} >  0  $ neem een $\delta$ omgeving rond $0$ waar dat
+Hierdoor is $\widehat{\psi}$ continu (Lemma 2.2) en ook $|\widehat{\psi}|^{2}$. Stel dat $|\widehat{\psi}(0)|^{2}>0$ neem een $\delta$ omgeving rond $0$ waar dat
 $|\widehat{\psi}|^{2}$ enkel verschilt met $\varepsilon >0$ dan is $\forall \varepsilon>0,\forall t \in [-\delta,\delta]:|\widehat{\psi}(t)|^{2} \ge   |\widehat{\psi}(0)|^{2} - \varepsilon$.
 Maar
 
