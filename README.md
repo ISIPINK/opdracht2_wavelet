@@ -9,7 +9,11 @@
 ## Te Bewijzen
 
 Admissibility condition:
-$2\pi\int_{\mathbb{R}^{*}}{\frac{\left|{\widehat{\psi}}(a)\right|^{2}}{\left|a\right|}}da=:C_{\psi}<\infty$
+
+$$
+2\pi\int_{\mathbb{R}^{*}}{\frac{\left|{\widehat{\psi}}(a)\right|^{2}}{\left|a\right|}}da=:C_{\psi}<\infty
+.
+$$
 
 $\forall \psi \in L^{2}, ||\psi|| =1 \text{ en } t \psi \in L^{1}: \text{Admissibility condition} \Leftrightarrow $
 
@@ -29,18 +33,18 @@ $$
 \end{aligned}
 $$
 
-Hierdoor is $\tilde{\psi}$ continu en ook $|\tilde{\psi}|^{2}$. Stel dat $|\tilde{\psi}(0)|^{2} >  0  $ neem een $\delta$ omgeving rond $0$ waar dat
-$|\tilde{\psi}|^{2}$ enkel verschilt met $\varepsilon >0$ dan is $\forall \varepsilon>0,\forall t \in [-\delta,\delta]:|\tilde{\psi}(t)|^{2} \ge   |\tilde{\psi}(0)|^{2} - \varepsilon$.
+Hierdoor is $\widehat{\psi}$ continu (Lemma 2.2) en ook $|\widehat{\psi}|^{2}$. Stel dat $|\widehat{\psi}(0)|^{2} >  0  $ neem een $\delta$ omgeving rond $0$ waar dat
+$|\widehat{\psi}|^{2}$ enkel verschilt met $\varepsilon >0$ dan is $\forall \varepsilon>0,\forall t \in [-\delta,\delta]:|\widehat{\psi}(t)|^{2} \ge   |\widehat{\psi}(0)|^{2} - \varepsilon$.
 Maar
 
 $$
 \begin{aligned}
-\int_{\mathbb{R}^{*}} \frac{|\tilde{\psi}(a)|^{2}}{|a|} da &\ge \int_{-\delta}^{\delta} \frac{|\tilde{\psi}(0)|^{2} - \varepsilon}{|a|}da \\
+\int_{\mathbb{R}^{*}} \frac{|\widehat{\psi}(a)|^{2}}{|a|} da &\ge \int_{-\delta}^{\delta} \frac{|\widehat{\psi}(0)|^{2} - \varepsilon}{|a|}da \\
 &\ge \infty .
 \end{aligned}
 $$
 
-wat een contradictie is waardoor $|\tilde{\psi}(0)|^{2} = 0 \Rightarrow \tilde{\psi}(0) = 0$
+wat een contradictie is waardoor $|\widehat{\psi}(0)|^{2} = 0 \Rightarrow \widehat{\psi}(0) = 0$
 
 ## Bewijs ($\Leftarrow$)
 
