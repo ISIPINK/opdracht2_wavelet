@@ -21,32 +21,67 @@ $$
 \int_{-\infty}^{\infty}\psi(t)\,d t=0\qquad\mathrm{resp.}\qquad\widehat{\psi}(0)=0\ .
 $$
 
-## Bewijs ($\Rightarrow$)
+## Bewijs
 
-$\psi \in L^{1}$ dit volgt uit Cauchy-Schwarz en $\psi \in L^{2} \text{ en } t \psi \in L^{1}$:
-
-$$
-\begin{aligned}
-\int_{\mathbb{R}} |\psi| dt &\le \int_{\mathbb{R} \setminus [-1,1]} |\psi| dt + \int_{-1}^{1} |\psi| dt \\
-                            &\le \int_{\mathbb{R} \setminus [-1,1]} |t| |\psi| dt +  \sqrt{\int_{-1}^{1} |1|^{2}dt  \int_{-1}^{1} |\psi|^{2} dt} \\
-                            &\le \infty .
-\end{aligned}
-$$
-
-Hierdoor is $\widehat{\psi}$ continu (Lemma 2.2) en ook $|\widehat{\psi}|^{2}$. Stel dat $|\widehat{\psi}(0)|^{2}>0$ neem een $\delta$ omgeving rond $0$ waar dat
-$|\widehat{\psi}|^{2}$ enkel verschilt met $\varepsilon >0$ dan is $\forall \varepsilon>0,\forall t \in [-\delta,\delta]:|\widehat{\psi}(t)|^{2} \ge   |\widehat{\psi}(0)|^{2} - \varepsilon$.
-Maar
+Door dat $t \psi \in L^{1}$ is $\widehat{\psi}$ continu afleidbaar (Lemma 2.17).
+De middelwaarden stelling geeft: $\forall |z|\le 1,\exists |c(z)|\le 1 :$
 
 $$
 \begin{aligned}
-\int_{\mathbb{R}^{*}} \frac{|\widehat{\psi}(a)|^{2}}{|a|} da &\ge \int_{-\delta}^{\delta} \frac{|\widehat{\psi}(0)|^{2} - \varepsilon}{|a|}da \\
-&\ge \infty .
+  \widehat{\psi}(z) &= \widehat{\psi}(0)+\widehat{\psi}'(c) z \Rightarrow \\
+  |\widehat{\psi}(z)|  &\ge  |\widehat{\psi}(0)| - |\widehat{\psi}'(c(z)) | |z| \\
+  |\widehat{\psi}(z)|  &\le  |\widehat{\psi}(0)| + |\widehat{\psi}'(c(z)) | |z|
+.
 \end{aligned}
 $$
 
-wat een contradictie is waardoor $|\widehat{\psi}(0)|^{2} = 0 \Rightarrow \widehat{\psi}(0) = 0$
+Opmerking omdat $\widehat{\psi}'$ continu is op een compact interval is het ook eindig en is $|\widehat{\psi}'(c(z)) |$ ook eindig.
 
-## Bewijs ($\Leftarrow$)
+### Bewijs ($\Rightarrow$)
+
+$$
+\begin{aligned}
+\infty &> 2 \pi \int_{\mathbb{R}^{*}} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da \\
+&> 2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(0)|^{2} - 2 |a| |\widehat{\psi}'(c(a))||\widehat{\psi}(0)| + |a|^{2} |\widehat{\psi}'(c(a))|^{2}   }{|a|} da.
+\end{aligned}
+$$
+
+De $2$ laatste termen zijn eindig dus irrelevant voor de ongelijkheid:
+
+$$
+\begin{aligned}
+
+\infty &> \int_{-1}^{1} \frac{|\widehat{\psi}(0)|^{2}}{|a|} da \Leftrightarrow \\
+\widehat{\psi}(0) &=0
+.
+\end{aligned}
+$$
+
+### Bewijs ($\Leftarrow$)
+
+Stel dat $\widehat{\psi}(0) =0$.
+
+$$
+\begin{aligned}
+2 \pi& \int_{\mathbb{R}^{*}} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da \\
+&\le 2 \pi \int_{\mathbb{R}^{*} \setminus [-1,1]} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
+
+&\le 2 \pi \int_{\mathbb{R}^{*} \setminus [-1,1]} |\widehat{\psi}(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
+&\le 2 \pi \int_{\mathbb{R}^{*} } |\widehat{\psi}(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
+
+&\le 2 \pi \int_{\mathbb{R}^{*} } |\psi(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
+
+&\le \text{eindig} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
+
+&\le \text{eindig} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}'(c(a))|^{2} |a|^{2}  }{|a|} da\\
+
+&\le \text{eindig} +2 \pi \int_{-1}^{1} |\widehat{\psi}'(c(a))|^{2} |a| da\\
+&\le \text{eindig} + \text{eindig} \\
+&< \infty
+
+.
+\end{aligned}
+$$
 
 # Voorbeeld 9.2
 
