@@ -9,7 +9,7 @@
 ## Te Bewijzen
 
 Admissibility condition:
-$2\pi\,\int_{\mathbb{R}^{*}}{\frac{\left|{\widehat{\psi}}(a)\right|^{2}}{\left|a\right|}}\,d a\,=:\,C_{\psi}\,<\,\infty$
+$2\pi\,\int_{\mathbb{R}^{*}}{\frac{\left|{\widehat{\psi}}(a)\right|^{2}}{\left|a\right|}}da\,=:\,C_{\psi}\,<\,\infty$
 
 $\forall \psi \in L^{2}, ||\psi|| =1 \text{ en } t \psi \in L^{1}: \text{Admissibility condition} \Leftrightarrow $
 
