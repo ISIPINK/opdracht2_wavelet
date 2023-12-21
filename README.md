@@ -58,29 +58,24 @@ $$
 
 ### Bewijs ($\Leftarrow$)
 
+Krijg dit niet juist gerenderd in github, ik gebruik hier de andere ongelijkheid en de veronderstelling.
+
 Stel dat $\widehat{\psi}(0) =0$.
 
 $$
 \begin{aligned}
-2 \pi& \int_{\mathbb{R}^{*}} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da \\
+& 2\pi \int_{\mathbb{R}^{*}} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da \\
 &\le 2 \pi \int_{\mathbb{R}^{*} \setminus [-1,1]} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
-&\le 2 \pi \int_{\mathbb{R}^{*} \setminus [-1,1]} |\widehat{\psi}(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
+&\le 2 \pi \int_{\mathbb{R}^{*} \setminus [-1,1]} |\widehat{\psi}(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da \\
 &\le 2 \pi \int_{\mathbb{R}^{*} } |\widehat{\psi}(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
 &\le 2 \pi \int_{\mathbb{R}^{*} } |\psi(a)|^{2} da +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
-&\le e_{1} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
-&\le e_{1} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}'(c(a))|^{2} |a|^{2}  }{|a|} da\\
-&\le e_{1} +2 \pi \int_{-1}^{1} |\widehat{\psi}'(c(a))|^{2} |a| da\\
-&\le e_{1} + e_{2} \\
+&\le \text{eindig} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}(a)|^{2} }{|a|} da\\
+&\le \text{eindig} +2 \pi \int_{-1}^{1} \frac{|\widehat{\psi}'(c(a))|^{2} |a|^{2}  }{|a|} da\\
+&\le \text{eindig} +2 \pi \int_{-1}^{1} |\widehat{\psi}'(c(a))|^{2} |a| da\\
+&\le \text{eindig} + \text{eindig} \\
 &< \infty.
 \end{aligned}
 $$
-
-Met $e_{1},e_{2} < \infty.$
 
 # Voorbeeld 9.2
 
