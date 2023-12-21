@@ -50,7 +50,6 @@ De $2$ laatste termen zijn eindig dus irrelevant voor de ongelijkheid:
 
 $$
 \begin{aligned}
-
 \infty &> \int_{-1}^{1} \frac{|\widehat{\psi}(0)|^{2}}{|a|} da \Leftrightarrow \\
 \widehat{\psi}(0) &=0
 .
